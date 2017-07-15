@@ -1,4 +1,5 @@
 <?php
+
 class Rectangle implements Shape {
   private $width;
   private $height;
