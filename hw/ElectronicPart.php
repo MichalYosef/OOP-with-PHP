@@ -41,6 +41,7 @@ class ElectronicPart {
 
     }
 
+    
 
     function getModel() {
         return $this->model; 
