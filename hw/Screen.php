@@ -6,7 +6,7 @@ class Screen extends ElectronicPart implements IElectronicPart {
     private $panel; 
     
     
-    function __construct( $manufacturer, $price, $model, $size=	13, $panel="" ) {
+    public function __construct( $manufacturer, $price, $model, $size=	13, $panel="" ) {
         
         $this->size = $size; 
         $this->panel = $panel; 
@@ -15,14 +15,14 @@ class Screen extends ElectronicPart implements IElectronicPart {
 
     }
 
-    function getSpecs() {
+    public function getSpecs() {
                   
          return get_class( $this ) . " manufacturer: " . $this->getManufacturer() . 
          ", model: ".$this->getModel().", Price: ".$this->getPrice(); 
          
     }
 
-
+   
     function getsize() {
         return $this->size; 
     }

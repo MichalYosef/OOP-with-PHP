@@ -16,7 +16,7 @@ class purchase{
 
     }
     
-    function getFullPurchaseDetails(){
+    public function getFullPurchaseDetails(){
 
         return  $this->screen->getSpecs()."<br>".$this->mouse->getSpecs()."<br>".$this->keyboard->getSpecs()."<br>".$this->computer->getSpecs()."<br>";
         

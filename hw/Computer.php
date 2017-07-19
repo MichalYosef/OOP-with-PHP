@@ -9,7 +9,7 @@ class Computer extends ElectronicPart implements IElectronicPart {
     private $graphicCard;
     
     
-    function __construct( $manufacturer, $price, $model, $motherboard,
+    public function __construct( $manufacturer, $price, $model, $motherboard,
                           $processor, $hardDrive, $ram, $graphicCard ) {
         
        
@@ -23,7 +23,7 @@ class Computer extends ElectronicPart implements IElectronicPart {
 
     }
 
-    function getSpecs() {
+    public function getSpecs() {
                   
          return get_class( $this ) . " manufacturer: " . $this->getManufacturer() . 
          ", model: ".$this->getModel().", Price: ".$this->getPrice(); 

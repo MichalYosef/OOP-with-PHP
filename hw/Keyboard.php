@@ -6,7 +6,7 @@ class Keyboard extends ElectronicPart implements IElectronicPart {
     
     
     
-    function __construct( $manufacturer, $price, $model, $isWired=false ) {
+    public function __construct( $manufacturer, $price, $model, $isWired=false ) {
         
         $this->isWired = $isWired; 
                 
@@ -14,7 +14,7 @@ class Keyboard extends ElectronicPart implements IElectronicPart {
 
     }
 
-    function getSpecs() {
+    public function getSpecs() {
                   
          return get_class( $this ) . " manufacturer: " . $this->getManufacturer() . 
          ", model: ".$this->getModel().", Price: ".$this->getPrice(); 
